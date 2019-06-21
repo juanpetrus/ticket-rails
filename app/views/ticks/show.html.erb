@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @tick.titulo %>
+</p>
+
+<p>
+  <strong>Conteudo:</strong>
+  <%= @tick.conteudo %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @tick.cliente %>
+</p>
+
+<p>
+  <strong>Pedido:</strong>
+  <%= @tick.pedido %>
+</p>
+
+<%= link_to 'Edit', edit_tick_path(@tick) %> |
+<%= link_to 'Back', ticks_path %>
