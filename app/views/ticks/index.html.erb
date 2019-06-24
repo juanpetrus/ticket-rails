@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Ticks</h1>
+<h1>Tickets</h1>
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Titulo</th>
@@ -18,8 +18,8 @@
       <tr>
         <td><%= tick.titulo %></td>
         <td><%= tick.conteudo %></td>
-        <td><%= tick.cliente %></td>
-        <td><%= tick.pedido %></td>
+        <td><%= tick.cliente.nome %></td>
+        <td><%= tick.pedido.id %></td>
         <td><%= link_to 'Show', tick %></td>
         <td><%= link_to 'Edit', edit_tick_path(tick) %></td>
         <td><%= link_to 'Destroy', tick, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Tick', new_tick_path %>
+<%= link_to 'Novo Ticket', new_tick_path, class: 'btn btn-primary' %>

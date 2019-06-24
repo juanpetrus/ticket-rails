@@ -10,28 +10,47 @@
       </ul>
     </div>
   <% end %>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= form.label :cliente_id %>
+        <%= form.text_field :cliente_id, class: 'form-control' %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :titulo %>
-    <%= form.text_field :titulo %>
-  </div>
+    <div class="col-md-4">
+        <div class="form-group">
+          <%= form.label :email %>
+          <%= form.text_field :email, class: 'form-control' %>
+        </div>
+      </div>
 
-  <div class="field">
-    <%= form.label :conteudo %>
-    <%= form.text_field :conteudo %>
-  </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <%= form.label :pedido_id %>
+        <%= form.text_field :pedido_id, class: 'form-control' %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :cliente_id %>
-    <%= form.text_field :cliente_id %>
-  </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <%= form.label :titulo %>
+        <%= form.text_field :titulo, class: 'form-control' %>
+      </div>
+    </div>
 
-  <div class="field">
-    <%= form.label :pedido_id %>
-    <%= form.text_field :pedido_id %>
-  </div>
+    <div class="col-md-12">
+      <div class="form-group">
+        <%= form.label :conteudo %>
+        <%= form.text_area :conteudo, class: 'form-control' %>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= form.submit %>
+    <div class="col-md-6">
+      <div class="form-group">
+        <%= form.submit class: 'btn btn-success' %>
+        <%= link_to 'Back', ticks_path, class: 'btn btn-primary' %>
+      </div>
+    </div>
   </div>
 <% end %>
